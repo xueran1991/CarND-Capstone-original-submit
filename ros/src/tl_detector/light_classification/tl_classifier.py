@@ -4,9 +4,9 @@ class TLClassifier(object):
     def __init__(self):
         #TODO load classifier
         
-        self.classes = {1: TrafficLight.GREEN,
-                        2: TrafficLight.RED,
-                        3: TrafficLight.YELLOW, 
+        self.classes = {0: TrafficLight.RED,
+                        1: TrafficLight.YELLOW,
+                        2: TrafficLight.GREEN, 
                         4: TrafficLight.UNKNOWN}
 
     def get_classification(self, image):
